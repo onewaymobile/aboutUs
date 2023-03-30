@@ -64,7 +64,7 @@ body {
 }
 
 .header__content {
-  background-image: url(/OnewayWeb/assets/image/png/Union.jpg);
+  background-image: url(../image/png/Union.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 686px;
