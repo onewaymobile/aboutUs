@@ -622,7 +622,7 @@ body {
   height: 258px;
   left: 0px;
   top: 282px;
-  background: url(/OnewayWeb/assets/image/png/Introduction/Rectangle\ 164\ \(1\).png);
+  background: url(../image/png/Introduction/Rectangle\ 164\ \(1\).png);
   border-radius: 30px;
 }
 
@@ -671,7 +671,7 @@ body {
   height: 398px;
   left: 0px;
   top: 142px;
-  background: url(/OnewayWeb/assets/image/png/Introduction/Rectangle\ 164.png);
+  background: url(../assets/image/png/Introduction/Rectangle\ 164.png);
   border-radius: 30px;
 
 }
