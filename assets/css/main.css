@@ -538,10 +538,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 183px;
+  width: 183px;
   overflow: hidden;
   margin: 0 auto;
   margin-top: 40px;
+}
+
+.introduction__box__vision .introduction__box--title-have-icon {
+  width: 188px;
 }
 
 
@@ -583,6 +587,10 @@ body {
   transform: translateX(-200%);
   position: relative;
   z-index: 0;
+}
+
+.introduction__box__vision--title--text {
+  
 }
 
 .introduction__box--title--text.start {
