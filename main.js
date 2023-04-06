@@ -11,25 +11,27 @@ animatedFrists.forEach(function(animatedFristEle){
 
 function handleNumRaisingAnmited() {
   var num = 0
-  let counting = setInterval(function() {
-    num += 5
-    if(num <= 100) {
-      numCountELe.innerHTML = num
-    } else {
-      clearInterval(counting)
-    }
-  }, 80)
+  setTimeout(function(){
+    let counting = setInterval(function() {
+      num += 2
+      if(num <= 100) {
+        numCountELe.innerHTML = num
+      } else {
+        clearInterval(counting)
+      }
+    }, 16)
+  },400)
 }
 // check scroll event when this element is show on screen
 function screenCheck() {
   animatedEles.forEach(function(animatedEle){
     var rect = animatedEle.getClientRects()[0]
     var numCountELeRect = numCountELe.getClientRects()[0]
-    if(!(rect.top > screenHeight - 50 || rect.bottom < 150)) {
+    if(!(rect.top > screenHeight - 250 || rect.bottom < 150)) {
       animatedEle.classList.add('start')
     }
     if(stillFirstCheck){
-      if(!(numCountELeRect.top > screenHeight - 50 || numCountELeRect.bottom < 150)) {
+      if(!(numCountELeRect.top > screenHeight - 150 || numCountELeRect.bottom < 150)) {
         handleNumRaisingAnmited()
         stillFirstCheck = false
       } 
@@ -38,7 +40,7 @@ function screenCheck() {
   })
   animatedFrists.forEach(function(animatedFristEle){
     var rect = animatedFristEle.getClientRects()[0]
-    if(!(rect.top > screenHeight - 50 || rect.bottom < 150)) {
+    if(!(rect.top > screenHeight - 000 || rect.bottom < 150)) {
       animatedFristEle.classList.add('start')
     } else {
       animatedFristEle.classList.remove('start')

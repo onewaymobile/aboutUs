@@ -262,6 +262,7 @@
 html {
   font-size: 62.5%;
   font-family: 'SF Pro',sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -284,5 +285,86 @@ html {
 }
 
 .grey-back {
+  background-color: #D9D9D9;
+}
+
+.grey-back--bold {
   background-color: #7A7A7A;
+}
+
+.mem-tag--wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mem-tag {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    height: 192px;
+    background-color: var(--white-color);
+    width: 320px;
+    position: relative;
+    margin-top: 140px;
+    opacity: 0;
+}
+
+.mem-tag--big {
+  width: 430px;
+  height: 280px;
+  border-radius: 30px;
+}
+
+.mem__img {
+  position: absolute;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FF9C09 100%);
+  border: 10px solid #FB7D35;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.mem-tag--big .mem__img {
+  width: 271px;
+  height: 271px;
+}
+
+.mem__infor {
+  text-align: center;
+  padding-top: 105px;
+  opacity: 0;
+}
+
+.mem-tag--big .mem__infor {
+  padding-top: 180px;
+}
+
+.mem__fullname {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.mem-tag--big .mem__fullname {
+  margin-bottom: 14px;
+}
+
+.mem__fullname span {
+  font-weight: 400;
+}
+.mem__pos {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+
+/* side effect */
+.no-margin-bot {
+  margin-bottom: 0;
 }
