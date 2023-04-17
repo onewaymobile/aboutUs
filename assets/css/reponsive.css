@@ -228,6 +228,7 @@
 .introduction__box--title--icon {
   width: 30px;
   height: 30px;
+  margin-right: 0;
   border-radius: 7px;
 }
 .introduction__box--title--icon img {
@@ -236,6 +237,7 @@
 }
 .introduction__box--title--text {
   font-size: 15px;
+  
 }
 .introduction__box--title-have-icon {
   width: 122px;
