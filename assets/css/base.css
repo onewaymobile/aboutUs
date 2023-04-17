@@ -272,6 +272,9 @@ html {
   --white-color: #FFFFFF;
 }
 
+.hide-on-pc {
+  display: none;
+}
 .full-height {
   height: 100%;
 }

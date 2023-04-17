@@ -3,7 +3,13 @@ var screenHeight = window.innerHeight
 const numCountELe = document.querySelector('.introduction__box__counting-number span')
 var animatedFrists = document.querySelectorAll('.header__content .first-trigger')
 var stillFirstCheck = true
+var companyName = document.querySelector(".company-name")
 
+if (window.innerWidth < 768) {
+  companyName.classList.remove("trigger")
+} else {
+
+}
 // handle animated instance after opening web
 animatedFrists.forEach(function(animatedFristEle){
     animatedFristEle.classList.add('start')

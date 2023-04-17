@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.css">
   <link rel="stylesheet" href="./assets/css/grid.css">
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/reponsive.css">
   <title>About Us</title>
 </head>
 <body>
@@ -14,26 +16,29 @@
       <div class="header__navbar--wrap--supper">
         <div class="grid wide header__navbar--wrap">
           <div class="header__navbar">
-            <div class="navbar__logo">
+            <div class="navbar__logo hide-on-mobile ">
               <img class="navbar__logo__image"  src="./assets/image/png/logo.png" alt="">
             </div> 
-            <ul class="navbar__list l-7">
+            <ul class="navbar__list l-7 hide-on-mobile ">
               <li class="navbar__list__item">
                 <a href="#introduction" class="navbar__list__item--link">Giới thiệu</a>
               </li>
               <li class="navbar__list__item">
-                <a href="#leadership" class="navbar__list__item--link">Ban lãnh đạo</a>
+                <a href="#team" class="navbar__list__item--link">Ban lãnh đạo</a>
               </li>
               <li class="navbar__list__item">
                 <a href="#ecosystem" class="navbar__list__item--link">Hệ sinh thái</a>
               </li>
               <li class="navbar__list__item">
-                <a href="#" class="navbar__list__item--link">Văn hoá</a>
+                <a href="#culture" class="navbar__list__item--link">Văn hoá</a>
               </li>
               <li class="navbar__list__item">
                 <a href="#activities" class="navbar__list__item--link">Hoạt động</a>
               </li>
             </ul>
+            <div class="navbar__open hide-on-pc">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -41,6 +46,9 @@
         <div class="header__content">
           <div class="grid wide full-height">
             <div class="header__content--wrap">
+              <div class="company__logo hide-on-pc">
+                <img src="./assets/image/mobile/logo tròn trắng-01 1.png" alt="">
+              </div>
               <h1 class="company-name first-trigger trigger">
                 công ty cổ phần <br>
                 thương mại và dịch vụ <br>
@@ -82,11 +90,11 @@
         <div class="grid wide">
           <div id="introduction">
             <div class="row">
-              <div class="introduction__des col l-5">
+              <div class="introduction__des col l-5 c-12">
                 <h1 class="introduction__des--title">
                   giới thiệu doanh nghiệp
                 </h1>
-                <ul class="introduction__des--list">
+                <ul class="introduction__des--list hide-on-mobile">
                   <li class="introduction__des--item">
                     <span>7 CHI NHÁNH</span>
                   </li>
@@ -97,8 +105,9 @@
                   <li class="introduction__des--item"> <span>GIÁ TRỊ CỐT LÕI</span> </li>
                 </ul>
               </div>
-              <div class="col l-7"></div>
-              <div class="introduction__box introduction__box--left trigger white-back col l-5">
+              <div class="col l-7 c-0"></div>
+              <div class="col l-0 c-1"></div>
+              <div class="introduction__box introduction__box--left trigger white-back col l-5 c-10">
                 <h3 class="introduction__box--title introduction__box--title--north">
                   KHU VỰC MIỀN BẮC
                 </h3>
@@ -142,8 +151,10 @@
                     </li>
                   </ul>
               </div>
-              <div class="col l-2"></div>
-              <div class="introduction__box introduction__box--right trigger white-back col l-5">
+              <div class="col l-2 c-0"></div>
+              <div class="col l-0 c-1"></div>
+              <div class="col l-0 c-1"></div>
+              <div class="introduction__box introduction__box--right trigger white-back col l-5 introduction__box--south c-10">
                 <h3 class="introduction__box--title trigger introduction__box--title--south">
                   KHU VỰC MIỀN NAM
                 </h3>
@@ -180,23 +191,30 @@
                     </li>
                   </ul>
               </div>
-              <div class="introduction__box introduction__box--left trigger primary-back col l-5">
+              <div class="col l-0 c-1"></div>
+              <div class="col l-0 c-1"></div>
+              <div class="introduction__box introduction__box--left trigger primary-back col l-5 c-10 introduction__box--khau-hieu">
                 <div class="introduction__box--sologan trigger">
                   <span>SLOGAN</span>
-                  <div class="introduction__box--sologan--after"></div>
+                  <div class="introduction__box--sologan--after hide-on-mobile"></div>
                 </div>
-                <p class="introduction__box--big-text trigger">UY TÍN</p>
-                <p class="introduction__box--medium-text trigger">TRƯỚC SAU</p>
-                <p class="introduction__box--big-text trigger">NHƯ MỘT</p>
+                <p class="introduction__box--big-text trigger ">UY TÍN</p>
+                <p class="introduction__box--medium-text trigger ">TRƯỚC SAU</p>
+                <p class="introduction__box--big-text trigger ">NHƯ MỘT</p>
+                <p class="introduction__box--mobile-text hide-on-pc">UY TÍN TRƯỚC SAU NHƯ MỘT</p>
               </div>
               <div class="col l-2"></div>
-              <div class="introduction__box col l-5 grey-back--bold introduction__box--right trigger introduction__box__counting">
+              <div class="col l-0 c-1"></div>
+ 
+              <div class="introduction__box col l-5 c-10 grey-back--bold introduction__box--right trigger introduction__box__counting">
                 <div class="introduction__box__counting-number ">
                   <span></span><span2>+</span2>
                 </div>
                 <span class="introduction__box__counting-text">NHÂN SỰ</span>
               </div>
-              <div class="introduction__box col l-5 white-back introduction__box--left trigger introduction__box__mission">
+              <div class="col l-0 c-1"></div>
+              <div class="col l-0 c-1"></div>
+              <div class="introduction__box col l-5 c-10 white-back introduction__box--left trigger introduction__box__mission">
                 <div class="introduction__box--title-have-icon ">
                   <div class="introduction__box--title--icon trigger">
                     <img src="./assets/image/png/Introduction/Isolation_Mode.png" alt="">
@@ -213,7 +231,9 @@
                 <div class="introduction__box__mission-image trigger"></div>
               </div>
               <div class="col l-2"></div>
-              <div class="introduction__box col l-5 white-back introduction__box--right trigger introduction__box__vision">
+              <div class="col l-0 c-1"></div>
+
+              <div class="introduction__box col l-5 c-10 white-back introduction__box--right trigger introduction__box__vision">
                 <div class="introduction__box--title-have-icon">
                   <div class="introduction__box--title--icon trigger introduction__box--title--icon--vision">
                     <img src="./assets/image/png/Introduction/Isolation_Mode (1).png" alt="">
@@ -231,7 +251,9 @@
                   <img src="./assets/image/png/Introduction/Rectangle 164.png" alt="">
                 </div>
               </div>
-              <div class="introduction__box__value trigger col l-12 white-back">
+              <div class="col l-0 c-1"></div>
+              <div class="col l-0 c-1"></div>
+              <div class="introduction__box__value trigger col l-12 white-back c-10">
                 <div class="introduction__box__value--title">
                   <div class="introduction__box__value--title-icon">
                     <img src="./assets/image/png/Introduction/OBJECTS.png" alt="">
@@ -259,8 +281,8 @@
                   </div>
                 </div>
               </div>
+              <div class="col l-0 c-1"></div>
             </div>
-            
           </div>
           <div id="ecosystem" class="trigger">
             <h3 class="ecosystem__heading">
@@ -268,125 +290,116 @@
 CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
             </h3>
             <div class="ecosystem__list">
-              <div class="row row1 ecosystem__row" style="--i: 1s">
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 223.png" alt="">
+              <div class="row ">
+
+                <div class="col l-2 c-3 ecosystem__brand" style="--i: 1s">
+                  <img src="./assets/image/png/brand/Oneway design/Rectangle 223.png" alt="" >
                 </div>
-                <div class="col l-2 ecosystem__brand">
+                <div class="col l-2 c-3 ecosystem__brand" style="--i: 1s">
                   <img src="./assets/image/png/brand/Oneway design/Rectangle 224.png" alt="">
                 </div>
-                <div class="col l-2 ecosystem__brand">
+                <div class="col l-2 c-3 ecosystem__brand" style="--i: 1s">
                   <img src="./assets/image/png/brand/Oneway design/Rectangle 225.png" alt="">
                 </div>
-                <div class="col l-2 ecosystem__brand">
+                <div class="col l-2 c-3 ecosystem__brand" style="--i: 1s">
                   <img src="./assets/image/png/brand/Oneway design/Rectangle 226.png" alt="">
                 </div>
-                <div class="col l-2 ecosystem__brand">
+                <div class="col l-2 c-3 ecosystem__brand" style="--i: 1s">
                   <img src="./assets/image/png/brand/Oneway design/Rectangle 227.png" alt="">
                 </div>
-                <div class="col l-2 ecosystem__brand">
+                <div class="col l-2 c-3 ecosystem__brand" style="--i: 1s">
                   <img src="./assets/image/png/brand/Oneway design/Rectangle 228.png" alt="">
                 </div>
-              </div>
-              <div class="row row2 ecosystem__row" style="--i: 2s">
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 229.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 230.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 231.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 232.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 233.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 234.png" alt="">
-                </div>
-              </div>
-              <div class="row row3 ecosystem__row" style="--i: 3s;">
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 235.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 236.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 237.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 238.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 239.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 240.png" alt="">
-                </div>
-              </div>
-              <div class="row row4 ecosystem__row" style="--i: 4s;">
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 241.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 242.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 243.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 244.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 245.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 246.png" alt="">
-                </div>
-              </div>
-              <div class="row row5 ecosystem__row" style="--i: 5s;">
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 247.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 248.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 249.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 250.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 251.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 252.png" alt="">
-                </div>
-              </div>
-              <div class="row row6 ecosystem__row" style="--i: 6s;">
-                <div class="col l-2 ecosystem__brand">
-                  <img src="" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 253.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="./assets/image/png/brand/Oneway design/Rectangle 254.png" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="" alt="">
-                </div>
-                <div class="col l-2 ecosystem__brand">
-                  <img src="" alt="">
-                </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 2s" >
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 229.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 2s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 230.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 2s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 231.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 2s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 232.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 2s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 233.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 2s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 234.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 3s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 235.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 3s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 236.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 3s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 237.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 3s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 238.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 3s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 239.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 3s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 240.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 4s" >
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 241.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 4s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 242.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 4s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 243.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 4s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 244.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 4s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 245.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 4s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 246.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 5s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 247.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 5s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 248.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 5s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 249.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 5s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 250.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 5s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 251.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 5s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 252.png" alt="">
+                  </div>
+                  <div class="col l-2 c-0 ecosystem__brand" style="--i: 6s">
+                    <img src="" alt="">
+                  </div>
+                  <div class="col l-2 c-0 ecosystem__brand" style="--i: 6s">
+                    <img src="" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 6s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 253.png" alt="">
+                  </div>
+                  <div class="col l-2 c-3 ecosystem__brand" style="--i: 6s">
+                    <img src="./assets/image/png/brand/Oneway design/Rectangle 254.png" alt="">
+                  </div>
+                  <div class="col l-2 c-0 ecosystem__brand" style="--i: 6s">
+                    <img src="" alt="">
+                  </div>
+                  <div class="col l-2 c-0 ecosystem__brand" style="--i: 6s">
+                    <img src="" alt="">
+                 </div>
               </div>
             </div>
           </div>
@@ -445,7 +458,8 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
               <div class="team__zone--director grey-back">
                 <div class="grid wide">
                   <div class="row sm-gutter">
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88.png" alt="">
@@ -458,7 +472,7 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (1).png" alt="">
@@ -467,12 +481,13 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                           <div class="mem__fullname no-margin-bot">
                            <span>Ông </span>Lê Đức Anh
                           </div>
-                          <span class="mem__pos">GIÁM ĐỐC PHÁT TRIỂN NGUỒN HÀNG <br>
-                            KIÊM KỸ THUẬT</span>
+                          <span class="mem__pos">GIÁM ĐỐC PHÁT TRIỂN NGUỒN HÀNG KIÊM KỸ THUẬT</span>
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col c-3-5 l-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (2).png" alt="">
@@ -492,8 +507,9 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
               <div class="team__zone--vice">
                 <div class="grid wide">
                   <div class="row sm-gutter">
-                    <div class="col l-2"></div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col l-2 c-0"></div>
+                    <div class="col c-1 l-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (3).png" alt="">
@@ -506,7 +522,7 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (4).png" alt="">
@@ -527,7 +543,8 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
               <div class="team__zone--hod grey-back">
                 <div class="grid wide">
                   <div class="row sm-gutter">
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (5).png" alt="">
@@ -540,7 +557,7 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (5).png" alt="">
@@ -553,7 +570,9 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col c-1 l-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (6).png" alt="">
@@ -566,9 +585,9 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-2"></div>
-                    <div class="col l-4 mem-tag--wrap">
-                      <div class="mem-tag">
+                    <div class="col l-2 c-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
+                      <div class="mem-tag hod-market">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (7).png" alt="">
                         </div>
@@ -581,7 +600,9 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col c-3-5 l-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (8).png" alt="">
@@ -601,7 +622,8 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
               <div class="another__zone">
                 <div class="grid wide">
                   <div class="row sm-gutter">
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (9).png" alt="">
@@ -614,7 +636,7 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (10).png" alt="">
@@ -627,7 +649,9 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col c-1 l-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (11).png" alt="">
@@ -640,7 +664,7 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (12).png" alt="">
@@ -653,7 +677,9 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col c-1 l-0"></div>
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (13).png" alt="">
@@ -666,7 +692,7 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-4 mem-tag--wrap">
+                    <div class="col l-4 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (14).png" alt="">
@@ -679,7 +705,9 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-3 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col c-1 l-0"></div>
+                    <div class="col l-3 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (5).png" alt="">
@@ -692,7 +720,7 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-3 mem-tag--wrap">
+                    <div class="col l-3 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (5).png" alt="">
@@ -705,7 +733,9 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-3 mem-tag--wrap">
+                    <div class="col c-1 l-0"></div>
+                    <div class="col c-1 l-0"></div>
+                    <div class="col l-3 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (5).png" alt="">
@@ -719,7 +749,7 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                         </div>
                       </div>
                     </div>
-                    <div class="col l-3 mem-tag--wrap">
+                    <div class="col l-3 c-5 mem-tag--wrap">
                       <div class="mem-tag">
                         <div class="mem__img">
                           <img src="./assets/image/png/team/Ellipse 88 (5).png" alt="">
@@ -742,7 +772,8 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
           <div id="culture">
             <h3 class="culture__title">VĂN HOÁ DOANH NGHIỆP</h3>
             <div class="row sm-gutter culture__content trigger">
-              <div class="col l-4">
+              <div class="col c-1 l-0"></div>
+              <div class="col l-4 c-10">
                 <div class="culture__box">
                   <h4 class="culture__box__heading">TÔN TRỌNG</h4>
                   <div class="culture__box--respect__list">
@@ -758,8 +789,10 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   </div>
                 </div>
               </div>
-              <div class="col l-4">
-                <div class="culture__box">
+              <div class="col c-1 l-0"></div>
+              <div class="col c-1 l-0"></div>
+              <div class="col l-4 c-10">
+                <div class="culture__box culture__box--deserve">
                   <h4 class="culture__box__heading">XỨNG ĐÁNG</h4>
                   <div class="culture__box--deserve__list">
                     <div class="culture__box--deserve__item">
@@ -782,8 +815,10 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   </div>
                 </div>
               </div>
-              <div class="col l-4">
-                <div class="culture__box">
+              <div class="col c-1 l-0"></div>
+              <div class="col c-1 l-0"></div>
+              <div class="col l-4 c-10">
+                <div class="culture__box culture__box--nhiet-huyet">
                   <h4 class="culture__box__heading" style="margin-bottom: 0;">
                     NHIỆT HUYẾT
                   </h4>
@@ -793,7 +828,7 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   </div>
                   <div class="culture__box--enthusiasm__desc">
                     <p  style="text-transform: uppercase;">
-                      “Nỗ lực gấp đôi người khác để Giàu <br> có  hoặc mãi an phận”
+                      “Nỗ lực gấp đôi người khác để Giàu có  hoặc mãi an phận”
                     </p>
                   </div>
 
@@ -811,19 +846,19 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   <span>2022</span>
                 </div>
                 <div class="acti__year__list row sm-gutter">
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img"  src="./assets/image/png/activities/Rectangle 282.png" alt="">
                     </div>
                     <p class="acti__year__name">Du lịch hè Nha Trang</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img"  src="./assets/image/png/activities/Rectangle 257.png" alt="">
                     </div>
                     <p class="acti__year__name">ONEWAY ALL-STAR 2022</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 281.jpg" alt="">
                     </div>
@@ -836,19 +871,19 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   <span>2021</span>
                 </div>
                 <div class="acti__year__list row sm-gutter">
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 281.png" alt="">
                     </div>
                     <p class="acti__year__name">Du lịch hè Phú Yên</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 282 (1).png" alt="">
                     </div>
                     <p class="acti__year__name">Giải bóng đá Oneway vô địch lần thứ 1</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 257 (1).png" alt="">
                     </div>
@@ -861,19 +896,19 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   <span>2020</span>
                 </div>
                 <div class="acti__year__list row sm-gutter">
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 282 (2).png" alt="">
                     </div>
                     <p class="acti__year__name">Du lịch hè Phú Quốc</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 281 (1).png" alt="">
                     </div>
                     <p class="acti__year__name">Sinh nhật 5 tuổi - AN VUI Resort</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 257 (2).png" alt="">
                     </div>
@@ -886,20 +921,20 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   <span>2019</span>
                 </div>
                 <div class="acti__year__list row sm-gutter">
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 257 (3).png" alt="">
                     </div>
                     <p class="acti__year__name">Du lịch hè Đà Nẵng</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 282 (3).png" alt="">
                     </div>
                     <p class="acti__year__name">Sinh nhật 4 tuổi<br>
                                                 Flamingo Đại Lải</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 281 (2).png" alt="">
                     </div>
@@ -912,20 +947,20 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   <span>2018</span>
                 </div>
                 <div class="acti__year__list row sm-gutter">
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 257 (4).png" alt="">
                     </div>
                     <p class="acti__year__name">Du lịch hè Quy Nhơn</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 282 (4).png" alt="">
                     </div>
                     <p class="acti__year__name">Sinh nhật 3 tuổi<br>
                       Flamingo Đại Lải</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 281 (3).png" alt="">
                     </div>
@@ -938,20 +973,20 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   <span>2017</span>
                 </div>
                 <div class="acti__year__list row sm-gutter">
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 257 (5).png" alt="">
                     </div>
                     <p class="acti__year__name">Du lịch hè Nha Trang</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 281 (4).png" alt="">
                     </div>
                     <p class="acti__year__name">Sinh nhật 2 tuổi<br>
                       Zen Resort</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 282 (5).png" alt="">
                     </div>
@@ -964,23 +999,24 @@ CÁC THƯƠNG HIỆU ĐANG ĐƯỢC PHÂN PHỐI TẠI ONEWAY
                   <span>2016</span>
                 </div>
                 <div class="acti__year__list row sm-gutter">
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 257 (6).png" alt="">
                     </div>
                     <p class="acti__year__name"></p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 281 (5).png" alt="">
                     </div>
-                    <p class="acti__year__name">Du lịch hè Đà Nẵng - Hội An</p>
+                    <p class="acti__year__name hide-on-pc show-on-mobile"></p>
+                    <p class="acti__year__name hide-on-mobile">Du lịch hè Đà Nẵng - Hội An</p>
                   </div>
-                  <div class=" col l-4">
+                  <div class=" col l-4 c-12">
                     <div class="acti__year__box">
                       <img class="acti__year__img" src="./assets/image/png/activities/Rectangle 297.png" alt="">
                     </div>
-                    <p class="acti__year__name"></p>
+                    <p class="acti__year__name hide-on-pc show-on-mobile">Du lịch hè Đà Nẵng - Hội An</p>
                   </div>
                 </div>
               </div>

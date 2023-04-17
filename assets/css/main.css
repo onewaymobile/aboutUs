@@ -932,18 +932,17 @@ body {
   color: var(--primary-color);
 
 }
+
 .ecosystem__list {
   overflow: hidden;
 }
-.ecosystem__row {
-  opacity: 0;
 
-}
 .ecosystem__brand {
   height: 129px;
+  opacity: 0;
 }
 
-#ecosystem.start .ecosystem__row {
+#ecosystem.start .ecosystem__brand {
   animation: slideup 1s calc(var(--i)/5) forwards;
 }
 
@@ -1014,7 +1013,6 @@ padding-bottom: 200px;
 }
 
 .acti__year__name {
-  margin-top: 15px;
   font-weight: bold;
   font-size: 21px;
   line-height: 28px;
