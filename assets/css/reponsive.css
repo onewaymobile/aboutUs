@@ -226,7 +226,7 @@
   .introduction__box--title--icon {
     width: 30px;
     height: 30px;
-    margin-right: 0;
+    margin-right: 20px;
     border-radius: 7px;
   }
   .introduction__box--title--icon img {
@@ -238,7 +238,6 @@
     
   }
   .introduction__box--title-have-icon {
-    width: 122px;
     margin-top: 16px;
   }
   .introduction__box--title--icon img {
@@ -705,7 +704,8 @@
 .company-name {
   font-size: 25px;
   line-height: 35px;
-  width: 100vw;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
   margin-top: 40px;
   font-weight: 700;
@@ -881,7 +881,7 @@
 .introduction__box--title--icon {
   width: 30px;
   height: 30px;
-  margin-right: 0;
+  margin-right: 20px;
   border-radius: 7px;
 }
 .introduction__box--title--icon img {
@@ -893,8 +893,8 @@
   
 }
 .introduction__box--title-have-icon {
-  width: 122px;
   margin-top: 16px;
+  transform: translateX(16%);
 }
 .introduction__box--title--icon img {
   width: 20px;
