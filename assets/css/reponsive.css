@@ -292,6 +292,8 @@
     bottom: 0;
     top: unset;
     left: 1px;
+    opacity: 1;
+    transform: translateY(0);
   }
   .introduction__box__vision-image img{
     width: 100%;
@@ -915,7 +917,9 @@
 }
 .introduction__box__mission-image {
   bottom: 0;
+  opacity: 1;
   top: unset;
+  transform: translateY(0);
   left: 0;
   background-size: contain;
   width: 202px;
@@ -1328,5 +1332,11 @@
   font-size: 14px;
   line-height: 40px;
   color: var(--white-color);
+}
+.introduction__box__vision-image.start {
+  animation: unset;
+}
+.introduction__box__mission-image.start {
+  animation: unset;
 }
 }
