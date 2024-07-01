@@ -1008,8 +1008,10 @@ padding-bottom: 200px;
 
 
 
-.acti__year__img {
-  
+.acti__each-year:first-of-type .acti__year__img {
+    width: 100%;
+    border: solid 8px var(--primary-color);
+    border-radius: 10px;
 }
 
 .acti__year__name {
