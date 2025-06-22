@@ -94,6 +94,8 @@ body {
   text-align: left;
   transform: translateY(-100%);
   width: 650px;
+  position: relative;
+    z-index: 100;
 }
 
 .company-name.start {
