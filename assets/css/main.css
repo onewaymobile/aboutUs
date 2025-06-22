@@ -94,8 +94,6 @@ body {
   text-align: left;
   transform: translateY(-100%);
   width: 650px;
-  position: relative;
-    z-index: 100;
 }
 
 .company-name.start {
@@ -288,10 +286,11 @@ body {
 .introduction__box {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.10));
   width: 540px;
-  height: 540px;
+  min-height: 540px;
   border-radius: 30px;
   margin-top: 100px;
   overflow: hidden;
+  padding-bottom: 20px;
 }
 .introduction__box--right {
   position: relative;
@@ -1005,10 +1004,23 @@ padding-bottom: 200px;
 }
 
 .acti__year__box {
+  width: 100%;
+  height: 300px;
+}
+.acti__each-year:nth-of-type(1) .acti__year__box {
+  width: 100%;
   height: 300px;
 }
 
-.acti__each-year:first-of-type .acti__year__img {
+
+.acti__each-year:nth-of-type(1) .acti__year__img {
+    width: 100%;
+    border: solid 8px var(--primary-color);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.acti__each-year:nth-of-type(2) .acti__year__img {
     width: 100%;
     border: solid 8px var(--primary-color);
     border-radius: 10px;
