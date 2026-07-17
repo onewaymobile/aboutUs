@@ -1007,23 +1007,21 @@ padding-bottom: 200px;
   width: 100%;
   height: 300px;
 }
-.acti__each-year:nth-of-type(1) .acti__year__box {
+.acti__year__img {
   width: 100%;
-  height: 300px;
+  height: 100%;
 }
 
 
-.acti__each-year:nth-of-type(1) .acti__year__img {
+.acti__each-year:nth-of-type(1) .acti__year__img,
+.acti__each-year:nth-of-type(2) .acti__year__img,
+.acti__each-year:nth-of-type(3) .acti__year__img,
+.acti__each-year:nth-of-type(4) .acti__year__img
+ {
     width: 100%;
     border: solid 8px var(--primary-color);
     border-radius: 10px;
     height: 100%;
-}
-
-.acti__each-year:nth-of-type(2) .acti__year__img {
-    width: 100%;
-    border: solid 8px var(--primary-color);
-    border-radius: 10px;
 }
 
 .acti__year__name {
@@ -1318,7 +1316,8 @@ padding-bottom: 200px;
   line-height: 70px;
   color: var(--primary-color);
 }
-.team__content {
+.team__content img{
+  width: 100%;
 }
 
 .cotb-zone {
